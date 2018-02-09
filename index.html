@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Devine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <h1>Trouve le bon numéro !!</h1>
+    <h1 id="chance1">Vous avez 3 chances avant de tout perdre !</h1>    
+    <h1 id="chance2">Vous avez 2 chances avant de tout perdre !</h1>
+    <h1 id="chance3">Vous avez 1 chance avant de tout perdre !</h1>
+
+    <input type="number" min="0" max="10" class="form-control" id="number" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    <button class="btn btn-primary" id="verify">
+        Vérifier
+    </button>
+    
+    <div id="plus">C'est plus !</div>
+    <div id="moins">C'est moins !</div>
+    <div id="winner">
+        <img id="logo_winner" src="img/winner.png">
+        <img id="logo_unicorn" src="img/unicorn.png">
+        BOUUUUM !!! Tu es un winner !!!
+        <button class="btn btn-primary rejouer">
+            Rejouer
+        </button>
+    </div>
+    <div id="loser">
+        GAME OVER !!! <br/>
+        Le numéro était le <p class="resultat"></p> ! Alors essaye encore ! 
+        <button class="btn btn-primary rejouer">
+            Rejouer
+        </button>
+    </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
